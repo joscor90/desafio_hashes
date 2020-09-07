@@ -13,3 +13,13 @@ Octubre: 21500,
 Noviembre: 91000,
 Diciembre: 21000
 }
+
+#Pushing the values of the original hash into a new array. This is a nested array.
+trimestres = []
+
+ventas.values.each_slice(3) do |arr|
+    trimestres.push(arr)
+end
+
+
+
