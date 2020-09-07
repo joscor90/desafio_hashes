@@ -27,3 +27,12 @@ trimestres.each do |ele|
     ventas_trimestrales.push(ele.sum)
 end
 
+#Creating the output hash.
+output = {}
+i = 1
+ventas_trimestrales.each do |ele|
+    output["Q#{i}"] = ele
+    i += 1
+end
+
+print "#{output}\n"
