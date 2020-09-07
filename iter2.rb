@@ -13,3 +13,7 @@ Octubre: 21500,
 Noviembre: 91000,
 Diciembre: 21000
 }
+
+#Hash filtering
+filtered_hash = ventas.select {|k, v| v > 45000}
+
