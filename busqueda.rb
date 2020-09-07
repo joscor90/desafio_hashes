@@ -17,6 +17,6 @@ Diciembre: 21000
 #Searching
 ARGV.each do |search|
     match = ventas.invert[search.to_i]
-    puts match ? match : "Mes no encontrado"
+    puts match ? match : "no encontrado"
 end
  
