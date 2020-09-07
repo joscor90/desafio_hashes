@@ -21,5 +21,9 @@ ventas.values.each_slice(3) do |arr|
     trimestres.push(arr)
 end
 
-
+#New array to store the sum of values of each trimester.
+ventas_trimestrales = []
+trimestres.each do |ele|
+    ventas_trimestrales.push(ele.sum)
+end
 
