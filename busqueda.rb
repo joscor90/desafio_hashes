@@ -13,3 +13,10 @@ Octubre: 21500,
 Noviembre: 91000,
 Diciembre: 21000
 }
+
+#Searching
+ARGV.each do |search|
+    match = ventas.invert[search]
+    puts match ? match : "Mes no encontrado"
+end
+ 
