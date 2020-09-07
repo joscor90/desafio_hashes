@@ -14,6 +14,7 @@ Noviembre: 91000,
 Diciembre: 21000
 }
 
-#Hash filtering
-filtered_hash = ventas.select {|k, v| v > 45000}
-
+#Hash filtering and output print
+ventas.each do |k, v|
+    puts k if v > 45000
+end
